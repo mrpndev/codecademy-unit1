@@ -10,20 +10,23 @@
 		<!-- character encoding (for different alphabets) -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- specifies the default sizing of the page for mobile-first design -->
+		<link rel="stylesheet" href="style.css">
+		<!-- link element links external file (in this instance a stylesheet) -->
 		<title>HTML & CSS Lesson</title>
 	</head>
 
-	<body>
+	<body style="background-color: whitesmoke;">
 		<header>
 			<h1>HTML & CSS Lesson</h1>
-			<img src="./assets/logo.svg" alt="codecademy-logo" height="75px" title="fullstack-10">
+			<img id="logo" src="./assets/logo.svg" alt="codecademy-logo" title="fullstack-10">
 			<!--  -->
 		</header>
 		<nav>
-			<a href="#btm">About</a>
+			<a class="nav-links" href="#btm">About</a>
 			<!-- #btm specifies an id with a value of btm. Used to go to part of the page -->
-			<a href="https://google.com">Google</a>
-			<a href="./contact.html">Contact Us</a>
+			<a class="nav-links" href="https://google.com">Google</a>
+			<a class="nav-links" href="./contact.html">Contact Us</a>
+			<a href="./position-display-float.html" class="nav-links">Position Display Float Lecture</a>
 		</nav>
 
 		<div>
@@ -43,7 +46,7 @@
 			</section>
 		</main>
 
-		<footer>Copyright 2026</footer>
+		<footer class="footer-class" id="footer-id" style="color: rebeccapurple;">Copyright 2026</footer>
 		<!-- contains everything displayed to the viewport (browser) -->
 		<!-- This is a comment -->
 		<!-- 
