@@ -195,3 +195,62 @@ body > div > p {
 	top: 75px;
 }
 
+/* 
+	? Display Property
+	* treats an element as block or inline
+	* blocks are created top-to-bottom
+	* inline are positioned side-by-side
+*/
+
+.block-container {
+	border: 2px solid black;
+	margin-top: 2px;
+
+	/* Initially a block */
+
+	/* Become an inline element */
+	/* display: inline; */
+}
+
+.inline-element {
+	margin: 5px;
+	
+	/* Turns inline element into a block element */
+	/* display: block; */
+}
+
+.inline-block {
+	border: 2px solid black;
+	margin-top: 2px;
+
+	/* Initially a block */
+
+	/* width doesn't do anything here */
+	display: inline;
+	width: 250px;
+
+	display: inline-block;
+}
+
+/* 
+	? Float
+	* floats elements from left to right
+*/
+
+.float-container {
+	width: 800px;
+	height: 500px;
+	border: 2px solid salmon;
+}
+
+.float-box {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+
+	float: right;
+}
+
+.float-example p {
+	direction: rtl;
+}
