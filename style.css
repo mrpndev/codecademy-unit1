@@ -102,3 +102,96 @@ body > div > p {
 	width: 250px;
 	height: 125px;
 }
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vh;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 25px;
+
+    position: relative
+    /* causes absolute container to position inside parent container */
+}
+
+.child {
+    padding: 25px;
+	border: 1px solid black;
+}
+
+/* 
+	? CSS Position Property
+
+	? Static
+	* default
+	* positioned in relation to elements
+	* top, bottom, left, right, and z-index properties have NO EFFECT
+
+	? Relative
+	* just like static
+	* can be changed using top, bottom, left, right, z-index
+	* values are RELATIVE to its original static position
+
+	? Absolute
+	* removes the element from the flow
+	* positions it relative to PARENT container
+	* if parent is static, it will move OUTSIDE of the parent container
+	* if parent is relative, it will move within the parent container
+	* positioning defined by top, bottom, left, right, z-index
+	! to mess around with it, comment/uncomment position:relative on parent-container
+	
+	? Fixed
+	* like absolute
+	* positioned to viewport
+	* doesn't move when scrolling
+	* positioning defined by top, bottom, left, right, z-index
+
+	? Sticky
+	* mix of relative and fixed
+	* relative to the flow
+	* position definition used for when you start scrolling
+	* stays fixed when scrolling; relative when stationary
+
+*/
+
+.static {
+	position: static;
+	border: 2px solid red;
+	background-color: red;
+	top: 250px;
+	left: 700px;
+}
+
+.relative {
+	border: 2px solid blueviolet;
+	background-color: blueviolet;
+	/* position: relative; */
+	top: 25px;
+	left: 25px;
+}
+
+.absolute {
+	border: 2px solid green;
+	background-color: green;
+	/* position: absolute; */
+	top: 0;
+}
+
+.fixed {
+	border: 2px solid teal;
+	background-color: teal;
+
+	/* position: fixed; */
+	top: 0;
+}
+
+.sticky {
+	border: 2px solid gray;
+	background-color: gray;
+
+	/* position: sticky; */
+	top: 75px;
+}
+
